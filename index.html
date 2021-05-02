@@ -9,11 +9,11 @@
     <link rel="stylesheet" href="stylesheet.css">
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body class="bg-gray-900 text-gray-50">
-<div class="min-h-screen min-w-screen bg-gray-900 flex flex-wrap items-center justify-center m-5">
+<body class="bg-black text-gray-50">
+<div class="flex flex-wrap justify-center m-5">
     <h1 class="font-bold text-2xl">Palette generator</h1>
     <form id="colorForm"
-          class="pt-5 border-t-2 border-gray-100 flex flex-wrap justify-evenly items-center w-full"
+          class="pt-5 border-gray-100 flex flex-wrap justify-evenly items-center w-full"
           onsubmit="return submitForm(event)">
         <!--                    nom -->
         <div class="flex flex-wrap justify-evenly">
@@ -23,13 +23,679 @@
                        class="w-full border border-gray-500 rounded bg-transparent text-sm text-gray-40 px-4 py-2 mt-2"
                        min="0" max="360" required>
             </div>
-            <div class="flex justify-center w-full mt-8">
-                <button type="submit" class="bg-blue-500 rounded py-2 text-white text-sm font-bold w-1/2" id="buttonValider">
-                    Valider
-                </button>
-            </div>
         </div>
     </form>
+    <!--        gray -->
+    <div class="flex w-full justify-evenly items-center mt-4 flex-wrap" id="gray">
+        <div class="flex justify-evenly items-center flex-wrap relative contentRectangleColor">
+            <div class="rectangleColor w-1/2" id="gray-50"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+        </div>
+        <div class="flex justify-evenly items-center flex-wrap relative contentRectangleColor">
+            <div class="rectangleColor w-1/2" id="gray-100"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+        </div>
+        <div class="flex justify-evenly items-center flex-wrap relative contentRectangleColor">
+            <div class="rectangleColor w-1/2" id="gray-200"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+        </div>
+        <div class="flex justify-evenly items-center flex-wrap relative contentRectangleColor">
+            <div class="rectangleColor w-1/2" id="gray-300"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+        </div>
+        <div class="flex justify-evenly items-center flex-wrap relative contentRectangleColor">
+            <div class="rectangleColor w-1/2" id="gray-400"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+        </div>
+        <div class="flex justify-evenly items-center flex-wrap relative contentRectangleColor">
+            <div class="rectangleColor w-1/2" id="gray-500"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+        </div>
+        <div class="flex justify-evenly items-center flex-wrap relative contentRectangleColor">
+            <div class="rectangleColor w-1/2" id="gray-600"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+        </div>
+        <div class="flex justify-evenly items-center flex-wrap relative contentRectangleColor">
+            <div class="rectangleColor w-1/2" id="gray-700"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+        </div>
+        <div class="flex justify-evenly items-center flex-wrap relative contentRectangleColor">
+            <div class="rectangleColor w-1/2" id="gray-800"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+        </div>
+        <div class="flex justify-evenly items-center flex-wrap relative contentRectangleColor">
+            <div class="rectangleColor w-1/2" id="gray-900"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+        </div>
+    </div>
+
+
+    <!--        red -->
+    <div class="flex w-full justify-evenly items-center mt-4 flex-wrap" id="red">
+        <div class="flex justify-evenly items-center flex-wrap relative contentRectangleColor">
+            <div class="rectangleColor w-1/2" id="red-50"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+        </div>
+        <div class="flex justify-evenly items-center flex-wrap relative contentRectangleColor">
+            <div class="rectangleColor w-1/2" id="red-100"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+        </div>
+        <div class="flex justify-evenly items-center flex-wrap relative contentRectangleColor">
+            <div class="rectangleColor w-1/2" id="red-200"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+        </div>
+        <div class="flex justify-evenly items-center flex-wrap relative contentRectangleColor">
+            <div class="rectangleColor w-1/2" id="red-300"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+        </div>
+        <div class="flex justify-evenly items-center flex-wrap relative contentRectangleColor">
+            <div class="rectangleColor w-1/2" id="red-400"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+        </div>
+        <div class="flex justify-evenly items-center flex-wrap relative contentRectangleColor">
+            <div class="rectangleColor w-1/2" id="red-500"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+        </div>
+        <div class="flex justify-evenly items-center flex-wrap relative contentRectangleColor">
+            <div class="rectangleColor w-1/2" id="red-600"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+        </div>
+        <div class="flex justify-evenly items-center flex-wrap relative contentRectangleColor">
+            <div class="rectangleColor w-1/2" id="red-700"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+        </div>
+        <div class="flex justify-evenly items-center flex-wrap relative contentRectangleColor">
+            <div class="rectangleColor w-1/2" id="red-800"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+        </div>
+        <div class="flex justify-evenly items-center flex-wrap relative contentRectangleColor">
+            <div class="rectangleColor w-1/2" id="red-900"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+        </div>
+    </div>
+
+    <!--        blue -->
+    <div class="flex w-full justify-evenly items-center mt-4 flex-wrap" id="blue">
+        <div class="flex justify-evenly items-center flex-wrap relative contentRectangleColor">
+            <div class="rectangleColor w-1/2" id="blue-50"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+        </div>
+        <div class="flex justify-evenly items-center flex-wrap relative contentRectangleColor">
+            <div class="rectangleColor w-1/2" id="blue-100"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+        </div>
+        <div class="flex justify-evenly items-center flex-wrap relative contentRectangleColor">
+            <div class="rectangleColor w-1/2" id="blue-200"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+        </div>
+        <div class="flex justify-evenly items-center flex-wrap relative contentRectangleColor">
+            <div class="rectangleColor w-1/2" id="blue-300"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+        </div>
+        <div class="flex justify-evenly items-center flex-wrap relative contentRectangleColor">
+            <div class="rectangleColor w-1/2" id="blue-400"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+        </div>
+        <div class="flex justify-evenly items-center flex-wrap relative contentRectangleColor">
+            <div class="rectangleColor w-1/2" id="blue-500"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+        </div>
+        <div class="flex justify-evenly items-center flex-wrap relative contentRectangleColor">
+            <div class="rectangleColor w-1/2" id="blue-600"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+        </div>
+        <div class="flex justify-evenly items-center flex-wrap relative contentRectangleColor">
+            <div class="rectangleColor w-1/2" id="blue-700"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+        </div>
+        <div class="flex justify-evenly items-center flex-wrap relative contentRectangleColor">
+            <div class="rectangleColor w-1/2" id="blue-800"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+        </div>
+        <div class="flex justify-evenly items-center flex-wrap relative contentRectangleColor">
+            <div class="rectangleColor w-1/2" id="blue-900"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+        </div>
+    </div>
+
+    <!--        green -->
+    <div class="flex w-full justify-evenly items-center mt-4 flex-wrap" id="green">
+        <div class="flex justify-evenly items-center flex-wrap relative contentRectangleColor">
+            <div class="rectangleColor w-1/2" id="green-50"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+        </div>
+        <div class="flex justify-evenly items-center flex-wrap relative contentRectangleColor">
+            <div class="rectangleColor w-1/2" id="green-100"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+        </div>
+        <div class="flex justify-evenly items-center flex-wrap relative contentRectangleColor">
+            <div class="rectangleColor w-1/2" id="green-200"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+        </div>
+        <div class="flex justify-evenly items-center flex-wrap relative contentRectangleColor">
+            <div class="rectangleColor w-1/2" id="green-300"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+        </div>
+        <div class="flex justify-evenly items-center flex-wrap relative contentRectangleColor">
+            <div class="rectangleColor w-1/2" id="green-400"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+        </div>
+        <div class="flex justify-evenly items-center flex-wrap relative contentRectangleColor">
+            <div class="rectangleColor w-1/2" id="green-500"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+        </div>
+        <div class="flex justify-evenly items-center flex-wrap relative contentRectangleColor">
+            <div class="rectangleColor w-1/2" id="green-600"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+        </div>
+        <div class="flex justify-evenly items-center flex-wrap relative contentRectangleColor">
+            <div class="rectangleColor w-1/2" id="green-700"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+        </div>
+        <div class="flex justify-evenly items-center flex-wrap relative contentRectangleColor">
+            <div class="rectangleColor w-1/2" id="green-800"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+        </div>
+        <div class="flex justify-evenly items-center flex-wrap relative contentRectangleColor">
+            <div class="rectangleColor w-1/2" id="green-900"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+        </div>
+    </div>
+
+    <!--        yellow -->
+    <div class="flex w-full justify-evenly items-center mt-4 flex-wrap" id="yellow">
+        <div class="flex justify-evenly items-center flex-wrap relative contentRectangleColor">
+            <div class="rectangleColor w-1/2" id="yellow-50"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+        </div>
+        <div class="flex justify-evenly items-center flex-wrap relative contentRectangleColor">
+            <div class="rectangleColor w-1/2" id="yellow-100"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+        </div>
+        <div class="flex justify-evenly items-center flex-wrap relative contentRectangleColor">
+            <div class="rectangleColor w-1/2" id="yellow-200"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+        </div>
+        <div class="flex justify-evenly items-center flex-wrap relative contentRectangleColor">
+            <div class="rectangleColor w-1/2" id="yellow-300"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+        </div>
+        <div class="flex justify-evenly items-center flex-wrap relative contentRectangleColor">
+            <div class="rectangleColor w-1/2" id="yellow-400"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+        </div>
+        <div class="flex justify-evenly items-center flex-wrap relative contentRectangleColor">
+            <div class="rectangleColor w-1/2" id="yellow-500"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+        </div>
+        <div class="flex justify-evenly items-center flex-wrap relative contentRectangleColor">
+            <div class="rectangleColor w-1/2" id="yellow-600"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+        </div>
+        <div class="flex justify-evenly items-center flex-wrap relative contentRectangleColor">
+            <div class="rectangleColor w-1/2" id="yellow-700"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+        </div>
+        <div class="flex justify-evenly items-center flex-wrap relative contentRectangleColor">
+            <div class="rectangleColor w-1/2" id="yellow-800"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+        </div>
+        <div class="flex justify-evenly items-center flex-wrap relative contentRectangleColor">
+            <div class="rectangleColor w-1/2" id="yellow-900"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+        </div>
+    </div>
+
+    <!--        indigo -->
+    <div class="flex w-full justify-evenly items-center mt-4 flex-wrap" id="indigo">
+        <div class="flex justify-evenly items-center flex-wrap relative contentRectangleColor">
+            <div class="rectangleColor w-1/2" id="indigo-50"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+        </div>
+        <div class="flex justify-evenly items-center flex-wrap relative contentRectangleColor">
+            <div class="rectangleColor w-1/2" id="indigo-100"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+        </div>
+        <div class="flex justify-evenly items-center flex-wrap relative contentRectangleColor">
+            <div class="rectangleColor w-1/2" id="indigo-200"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+        </div>
+        <div class="flex justify-evenly items-center flex-wrap relative contentRectangleColor">
+            <div class="rectangleColor w-1/2" id="indigo-300"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+        </div>
+        <div class="flex justify-evenly items-center flex-wrap relative contentRectangleColor">
+            <div class="rectangleColor w-1/2" id="indigo-400"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+        </div>
+        <div class="flex justify-evenly items-center flex-wrap relative contentRectangleColor">
+            <div class="rectangleColor w-1/2" id="indigo-500"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+        </div>
+        <div class="flex justify-evenly items-center flex-wrap relative contentRectangleColor">
+            <div class="rectangleColor w-1/2" id="indigo-600"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+        </div>
+        <div class="flex justify-evenly items-center flex-wrap relative contentRectangleColor">
+            <div class="rectangleColor w-1/2" id="indigo-700"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+        </div>
+        <div class="flex justify-evenly items-center flex-wrap relative contentRectangleColor">
+            <div class="rectangleColor w-1/2" id="indigo-800"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+        </div>
+        <div class="flex justify-evenly items-center flex-wrap relative contentRectangleColor">
+            <div class="rectangleColor w-1/2" id="indigo-900"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+        </div>
+    </div>
+
+    <!--        purple -->
+    <div class="flex w-full justify-evenly items-center mt-4 flex-wrap" id="purple">
+        <div class="flex justify-evenly items-center flex-wrap relative contentRectangleColor">
+            <div class="rectangleColor w-1/2" id="purple-50"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+        </div>
+        <div class="flex justify-evenly items-center flex-wrap relative contentRectangleColor">
+            <div class="rectangleColor w-1/2" id="purple-100"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+        </div>
+        <div class="flex justify-evenly items-center flex-wrap relative contentRectangleColor">
+            <div class="rectangleColor w-1/2" id="purple-200"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+        </div>
+        <div class="flex justify-evenly items-center flex-wrap relative contentRectangleColor">
+            <div class="rectangleColor w-1/2" id="purple-300"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+        </div>
+        <div class="flex justify-evenly items-center flex-wrap relative contentRectangleColor">
+            <div class="rectangleColor w-1/2" id="purple-400"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+        </div>
+        <div class="flex justify-evenly items-center flex-wrap relative contentRectangleColor">
+            <div class="rectangleColor w-1/2" id="purple-500"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+        </div>
+        <div class="flex justify-evenly items-center flex-wrap relative contentRectangleColor">
+            <div class="rectangleColor w-1/2" id="purple-600"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+        </div>
+        <div class="flex justify-evenly items-center flex-wrap relative contentRectangleColor">
+            <div class="rectangleColor w-1/2" id="purple-700"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+        </div>
+        <div class="flex justify-evenly items-center flex-wrap relative contentRectangleColor">
+            <div class="rectangleColor w-1/2" id="purple-800"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+        </div>
+        <div class="flex justify-evenly items-center flex-wrap relative contentRectangleColor">
+            <div class="rectangleColor w-1/2" id="purple-900"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+        </div>
+    </div>
+
+    <!--        pink -->
+    <div class="flex w-full justify-evenly items-center mt-4 flex-wrap" id="pink">
+        <div class="flex justify-evenly items-center flex-wrap relative contentRectangleColor">
+            <div class="rectangleColor w-1/2" id="pink-50"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+        </div>
+        <div class="flex justify-evenly items-center flex-wrap relative contentRectangleColor">
+            <div class="rectangleColor w-1/2" id="pink-100"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+        </div>
+        <div class="flex justify-evenly items-center flex-wrap relative contentRectangleColor">
+            <div class="rectangleColor w-1/2" id="pink-200"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+        </div>
+        <div class="flex justify-evenly items-center flex-wrap relative contentRectangleColor">
+            <div class="rectangleColor w-1/2" id="pink-300"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+        </div>
+        <div class="flex justify-evenly items-center flex-wrap relative contentRectangleColor">
+            <div class="rectangleColor w-1/2" id="pink-400"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+        </div>
+        <div class="flex justify-evenly items-center flex-wrap relative contentRectangleColor">
+            <div class="rectangleColor w-1/2" id="pink-500"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+        </div>
+        <div class="flex justify-evenly items-center flex-wrap relative contentRectangleColor">
+            <div class="rectangleColor w-1/2" id="pink-600"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+        </div>
+        <div class="flex justify-evenly items-center flex-wrap relative contentRectangleColor">
+            <div class="rectangleColor w-1/2" id="pink-700"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+        </div>
+        <div class="flex justify-evenly items-center flex-wrap relative contentRectangleColor">
+            <div class="rectangleColor w-1/2" id="pink-800"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+        </div>
+        <div class="flex justify-evenly items-center flex-wrap relative contentRectangleColor">
+            <div class="rectangleColor w-1/2" id="pink-900"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+            <div class="h-full flex justify-center items-center m-2 text-xs"></div>
+        </div>
+    </div>
 </div>
+<script>
+    const rgb2hex = (rgb) => `#${rgb.match(/^rgb\((\d+),\s*(\d+),\s*(\d+)\)$/).slice(1).map(n => parseInt(n, 10).toString(16).padStart(2, '0')).join('')}`
+
+    function hexToHSL(H) {
+        // Convert hex to RGB first
+        let r = 0, g = 0, b = 0;
+        if (H.length == 4) {
+            r = "0x" + H[1] + H[1];
+            g = "0x" + H[2] + H[2];
+            b = "0x" + H[3] + H[3];
+        } else if (H.length == 7) {
+            r = "0x" + H[1] + H[2];
+            g = "0x" + H[3] + H[4];
+            b = "0x" + H[5] + H[6];
+        }
+        // Then to HSL
+        r /= 255;
+        g /= 255;
+        b /= 255;
+        let cmin = Math.min(r, g, b),
+            cmax = Math.max(r, g, b),
+            delta = cmax - cmin,
+            h = 0,
+            s = 0,
+            l = 0;
+
+        if (delta == 0)
+            h = 0;
+        else if (cmax == r)
+            h = ((g - b) / delta) % 6;
+        else if (cmax == g)
+            h = (b - r) / delta + 2;
+        else
+            h = (r - g) / delta + 4;
+
+        h = Math.round(h * 60);
+
+        if (h < 0)
+            h += 360;
+
+        l = (cmax + cmin) / 2;
+        s = delta == 0 ? 0 : delta / (1 - Math.abs(2 * l - 1));
+        s = +(s * 100).toFixed(1);
+        l = +(l * 100).toFixed(1);
+
+        return "hsl(" + h + "," + s + "%," + l + "%)";
+    }
+
+    grayBlock = document.getElementById("gray");
+    grayBlock = grayBlock.childNodes;
+
+    majElements();
+
+    function majElements() {
+        let i = 0;
+        for (let key of grayBlock) {
+            if (i % 2) {
+                let keyChild = key.childNodes;
+                keyChild[3].textContent = window.getComputedStyle(keyChild[1], null).getPropertyValue('background-color');
+                keyChild[5].textContent = rgb2hex(window.getComputedStyle(keyChild[1], null).getPropertyValue('background-color'));
+                keyChild[7].textContent = hexToHSL(rgb2hex(window.getComputedStyle(keyChild[1], null).getPropertyValue('background-color')));
+            }
+            i++;
+        }
+
+        redBlock = document.getElementById("red");
+        redBlock = redBlock.childNodes;
+        i = 0;
+        for (let key of redBlock) {
+            if (i % 2) {
+                let keyChild = key.childNodes;
+                keyChild[3].textContent = window.getComputedStyle(keyChild[1], null).getPropertyValue('background-color');
+                keyChild[5].textContent = rgb2hex(window.getComputedStyle(keyChild[1], null).getPropertyValue('background-color'));
+                keyChild[7].textContent = hexToHSL(rgb2hex(window.getComputedStyle(keyChild[1], null).getPropertyValue('background-color')));
+            }
+            i++;
+        }
+
+        blueBlock = document.getElementById("blue");
+        blueBlock = blueBlock.childNodes;
+        i = 0;
+        for (let key of blueBlock) {
+            if (i % 2) {
+                let keyChild = key.childNodes;
+                keyChild[3].textContent = window.getComputedStyle(keyChild[1], null).getPropertyValue('background-color');
+                keyChild[5].textContent = rgb2hex(window.getComputedStyle(keyChild[1], null).getPropertyValue('background-color'));
+                keyChild[7].textContent = hexToHSL(rgb2hex(window.getComputedStyle(keyChild[1], null).getPropertyValue('background-color')));
+            }
+            i++;
+        }
+
+        greenBlock = document.getElementById("green");
+        greenBlock = greenBlock.childNodes;
+        i = 0;
+        for (let key of greenBlock) {
+            if (i % 2) {
+                let keyChild = key.childNodes;
+                keyChild[3].textContent = window.getComputedStyle(keyChild[1], null).getPropertyValue('background-color');
+                keyChild[5].textContent = rgb2hex(window.getComputedStyle(keyChild[1], null).getPropertyValue('background-color'));
+                keyChild[7].textContent = hexToHSL(rgb2hex(window.getComputedStyle(keyChild[1], null).getPropertyValue('background-color')));
+            }
+            i++;
+        }
+
+        yellowBlock = document.getElementById("yellow");
+        yellowBlock = yellowBlock.childNodes;
+        i = 0;
+        for (let key of yellowBlock) {
+            if (i % 2) {
+                let keyChild = key.childNodes;
+                keyChild[3].textContent = window.getComputedStyle(keyChild[1], null).getPropertyValue('background-color');
+                keyChild[5].textContent = rgb2hex(window.getComputedStyle(keyChild[1], null).getPropertyValue('background-color'));
+                keyChild[7].textContent = hexToHSL(rgb2hex(window.getComputedStyle(keyChild[1], null).getPropertyValue('background-color')));
+            }
+            i++;
+        }
+
+        indigoBlock = document.getElementById("indigo");
+        indigoBlock = indigoBlock.childNodes;
+        i = 0;
+        for (let key of indigoBlock) {
+            if (i % 2) {
+                let keyChild = key.childNodes;
+                keyChild[3].textContent = window.getComputedStyle(keyChild[1], null).getPropertyValue('background-color');
+                keyChild[5].textContent = rgb2hex(window.getComputedStyle(keyChild[1], null).getPropertyValue('background-color'));
+                keyChild[7].textContent = hexToHSL(rgb2hex(window.getComputedStyle(keyChild[1], null).getPropertyValue('background-color')));
+            }
+            i++;
+        }
+
+        purpleBlock = document.getElementById("purple");
+        purpleBlock = purpleBlock.childNodes;
+        i = 0;
+        for (let key of purpleBlock) {
+            if (i % 2) {
+                let keyChild = key.childNodes;
+                keyChild[3].textContent = window.getComputedStyle(keyChild[1], null).getPropertyValue('background-color');
+                keyChild[5].textContent = rgb2hex(window.getComputedStyle(keyChild[1], null).getPropertyValue('background-color'));
+                keyChild[7].textContent = hexToHSL(rgb2hex(window.getComputedStyle(keyChild[1], null).getPropertyValue('background-color')));
+            }
+            i++;
+        }
+
+        pinkBlock = document.getElementById("pink");
+        pinkBlock = pinkBlock.childNodes;
+        i = 0;
+        for (let key of pinkBlock) {
+            if (i % 2) {
+                let keyChild = key.childNodes;
+                keyChild[3].textContent = window.getComputedStyle(keyChild[1], null).getPropertyValue('background-color');
+                keyChild[5].textContent = rgb2hex(window.getComputedStyle(keyChild[1], null).getPropertyValue('background-color'));
+                keyChild[7].textContent = hexToHSL(rgb2hex(window.getComputedStyle(keyChild[1], null).getPropertyValue('background-color')));
+            }
+            i++;
+        }
+    }
+
+
+</script>
 </body>
 </html>
