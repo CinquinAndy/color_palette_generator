@@ -33,12 +33,15 @@ let yellows = new ColorObject(yellowBlock);
 
 let hue = document.getElementById("hue");
 hue.addEventListener("change", maj);
+hue.addEventListener("input", maj);
 
 let Saturation = document.getElementById("Saturation");
 Saturation.addEventListener("change", maj);
+Saturation.addEventListener("input", maj);
 
 let Lightness = document.getElementById("Lightness");
 Lightness.addEventListener("change", maj);
+Lightness.addEventListener("input", maj);
 
 function maj() {
     let labelHue = document.getElementById("labelHue");
