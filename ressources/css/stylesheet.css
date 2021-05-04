@@ -17,9 +17,31 @@
     top:0;
 }
 
+#labelHue{
+    width:100%;
+}
+#hue{
+    margin-top:20px;
+    width:200px;
+}
+#labelSaturation{
+    width:100%;
+}
+#Saturation{
+    margin-top:20px;
+    width:200px;
+}
+#labelLightness{
+    width:100%;
+}
+#Lightness{
+    margin-top:20px;
+    width:200px;
+}
 #black {
     --tw-bg-opacity: 1;
     background-color: rgba(0, 0, 0, var(--tw-bg-opacity));
+    background-color: hsl();
 }
 
 #white {
@@ -29,52 +51,61 @@
 
 #gray-50 {
     --tw-bg-opacity: 1;
-    background-color: rgba(249, 250, 251, var(--tw-bg-opacity));
+    background-color: hsl(210,20%,98%);
+
 }
 
 #gray-100 {
     --tw-bg-opacity: 1;
-    background-color: rgba(243, 244, 246, var(--tw-bg-opacity));
+    background-color: hsl(220,14.3%,95.9%)
+
 }
 
 #gray-200 {
     --tw-bg-opacity: 1;
-    background-color: rgba(229, 231, 235, var(--tw-bg-opacity));
+    background-color: hsl(220,13%,91%)
+
 }
 
 #gray-300 {
     --tw-bg-opacity: 1;
-    background-color: rgba(209, 213, 219, var(--tw-bg-opacity));
+    background-color: hsl(216,12.2%,83.9%)
+
 }
 
 #gray-400 {
     --tw-bg-opacity: 1;
-    background-color: rgba(156, 163, 175, var(--tw-bg-opacity));
+    background-color: hsl(218,10.6%,64.9%)
+
 }
 
 #gray-500 {
     --tw-bg-opacity: 1;
-    background-color: rgba(107, 114, 128, var(--tw-bg-opacity));
+    background-color: hsl(220,8.9%,46.1%)
+
 }
 
 #gray-600 {
     --tw-bg-opacity: 1;
-    background-color: rgba(75, 85, 99, var(--tw-bg-opacity));
+    background-color: hsl(215,13.8%,34.1%)
+
 }
 
 #gray-700 {
     --tw-bg-opacity: 1;
-    background-color: rgba(55, 65, 81, var(--tw-bg-opacity));
+    background-color: hsl(217,19.1%,26.7%)
+
 }
 
 #gray-800 {
     --tw-bg-opacity: 1;
-    background-color: rgba(31, 41, 55, var(--tw-bg-opacity));
+    background-color: hsl(215,27.9%,16.9%)
+
 }
 
 #gray-900 {
     --tw-bg-opacity: 1;
-    background-color: rgba(17, 24, 39, var(--tw-bg-opacity));
+    background-color: hsl(221,39.3%,11%)
 }
 
 #red-50 {
