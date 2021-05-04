@@ -1,10 +1,13 @@
 * {
     box-sizing: border-box;
-    font-family: roboto, serif;
+    font-family: roboto, sans-serif;
     text-decoration: none;
     transition: all ease-in-out .3s
 }
 
+body{
+    background: #222;
+}
 .contentRectangleColor {
     margin:7px;
     width:6%;

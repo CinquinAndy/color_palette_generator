@@ -5,15 +5,41 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>palette generator</title>
+    <title>Générateur de palette, by Andy Cinquin</title>
+    <meta name="description" content="Générateur de palette by Andy Cinquin">
     <link rel="stylesheet" href="ressources/css/stylesheet.css">
+    <link rel="stylesheet" href="ressources/css/buttonTop.css">
+    <link rel="stylesheet" href="ressources/css/loader.css">
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-    <script src="ColorObject.js"></script>
-
+    <script src="ressources/js/ColorObject.js"></script>
+    <link rel="icon" type="image/png" href="images/codes.png"/>
 </head>
-<body class="bg-black text-gray-50">
+<body class="text-gray-50">
+<div id="loader">
+    <div class="loadingio-spinner-ripple-b4j2fudxuca">
+        <div class="ldio-q5lgd6ryx3e">
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+</div>
+<a class="buttonTop" href="https://andy-cinquin.fr/">
+    <span>
+        <span>&nbsp;</span>
+        <span class="text-home">HOME</span>
+        <span>&nbsp;</span>
+    </span>
+</a>
+
+<a class="buttonTopBTS" href="https://bts.andy-cinquin.fr/">
+    <span>
+        <span>&nbsp;</span>
+        <span class="text-home">BTS</span>
+        <span>&nbsp;</span>
+    </span>
+</a>
 <div class="flex flex-wrap justify-center m-5">
-    <h1 class="font-bold text-2xl">Palette generator</h1>
+    <h1 class="font-bold text-2xl mt-4">Générateur de palette HSL/RGB/HEX, by Andy Cinquin</h1>
     <form id="colorForm"
           class="pt-5 border-gray-100 flex flex-wrap justify-evenly items-center w-full">
         <!--                    nom -->
@@ -554,6 +580,7 @@
         </div>
     </div>
 </div>
+<script src="ressources/js/loader.js"></script>
 <script src="ressources/js/script.js"></script>
 </body>
 </html>
