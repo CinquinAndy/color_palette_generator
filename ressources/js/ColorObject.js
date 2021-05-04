@@ -129,7 +129,7 @@ class ColorObject {
         }
         for (let key in this._Saturation) {
             valueSaturation = parseFloat(valueSaturation);
-            this._Saturation[key] = Math.abs(this._Saturation[key] + valueSaturation);
+            this._Saturation[key] = parseFloat(this._Saturation[key]) + valueSaturation;
             if (this._Saturation[key] > 100) {
                 this._Saturation[key] = 100;
             } else if (this._Saturation[key] < 0) {
@@ -138,7 +138,7 @@ class ColorObject {
         }
         for (let key in this._Lightness) {
             valueLightness = parseFloat(valueLightness);
-            this._Lightness[key] = Math.abs(this._Lightness[key] + valueLightness);
+            this._Lightness[key] = parseFloat(this._Lightness[key]) + valueLightness;
             if (this._Lightness[key] > 100) {
                 this._Lightness[key] = 100;
             } else if (this._Lightness[key] < 0) {
